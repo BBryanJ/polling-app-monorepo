@@ -1,14 +1,12 @@
-import styles from './page.module.css';
+import { Code } from '@repo/ui/code';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <h1>Polling app</h1>
-        <p>
-          Running from <code>apps/web</code>
-        </p>
-      </main>
-    </div>
+    <main className='flex min-h-screen flex-col items-center justify-center p-24'>
+      <h1 className='text-4xl font-bold'>Polling app (Web)</h1>
+      <p className='text-md mt-4'>
+        Running from <Code className='font-mono font-bold'>apps/web</Code>
+      </p>
+    </main>
   );
 }
