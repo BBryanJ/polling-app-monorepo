@@ -3,6 +3,8 @@ import cors from 'cors';
 import morgan from 'morgan';
 import { json, urlencoded } from 'body-parser';
 
+import pollRoutes from './routes/poll';
+
 export const createServer = (): Express => {
   const app = express();
   app
@@ -14,6 +16,8 @@ export const createServer = (): Express => {
     .get('/', (_, res) => {
       return res.json({ status: 'OK' });
     });
+
+  app.use('/poll', pollRoutes);
 
   return app;
 };
