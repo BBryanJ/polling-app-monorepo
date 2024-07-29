@@ -13,11 +13,11 @@ export const createServer = (): Express => {
     .use(urlencoded({ extended: true }))
     .use(json())
     .use(cors())
-    .get('/', (_, res) => {
+    .get('/api', (_, res) => {
       return res.json({ status: 'OK' });
     });
 
-  app.use('/poll', pollRoutes);
+  app.use('/api/poll', pollRoutes);
 
   return app;
 };
