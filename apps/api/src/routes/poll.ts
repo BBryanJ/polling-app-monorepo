@@ -1,10 +1,10 @@
-import express, { Request } from 'express';
+import express, { Request, Router } from 'express';
 import optionRoutes from './option';
 import { getAllPolls, getPollById } from '../lib';
 
 type PollRequest = Request<{ id: string }>;
 
-const router = express.Router({ mergeParams: true });
+const router: Router = express.Router({ mergeParams: true });
 
 router.get('/', (_, res) => {
   const data = getAllPolls();

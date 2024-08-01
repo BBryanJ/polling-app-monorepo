@@ -3,7 +3,7 @@
   "compileOptions": {
     "lib": ["ES2015"],
     "outDir": "./dist",
-    "rootDir": "./package.json"
+    "rootDir": "./src"
   },
   "exclude": ["node_modules"],
   "include": ["src"]

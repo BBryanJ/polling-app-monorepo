@@ -1,9 +1,9 @@
-import express, { Request } from 'express';
+import express, { Request, Router } from 'express';
 import { getPollOptionById, getPollOptions } from '../../lib';
 
 type OptionRequest = Request<{ id: string; optionId: string }>;
 
-const router = express.Router({ mergeParams: true });
+const router: Router = express.Router({ mergeParams: true });
 
 router.get('/', (req: OptionRequest, res) => {
   const { id } = req.params;
