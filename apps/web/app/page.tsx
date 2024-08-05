@@ -1,4 +1,5 @@
 import { Code } from '@repo/ui/code';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -10,10 +11,7 @@ export default function Home() {
               <a href='/'>Home</a>
             </li>
             <li>
-              <a href='/'>Create Poll</a>
-            </li>
-            <li>
-              <a href='/'>Vote</a>
+              <Link href='/new-poll'>Create Poll</Link>
             </li>
           </ul>
         </nav>
@@ -22,10 +20,14 @@ export default function Home() {
           <span>Sign Up</span>
         </div>
       </header>
-      <main className='flex min-h-screen flex-col items-center justify-center p-24'>
+      <main className='flex min-h-screen flex-col items-center justify-center gap-4 p-24'>
         <h1 className='text-4xl font-bold'>Polling app (Web)</h1>
-        <p className='text-md mt-4'>
-          Running from <Code className='font-mono font-bold'>apps/web</Code>
+        <h2 className='text-3xl font-semibold'>Landing Page</h2>
+        <p className='text-md'>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi illo
+          velit unde id voluptas et saepe, nostrum rerum amet eius aspernatur
+          incidunt maxime consequuntur doloremque perferendis aliquam ratione,
+          ad atque?
         </p>
       </main>
       <footer className='flex items-center justify-between border-t-2 border-gray-200 p-4'>
