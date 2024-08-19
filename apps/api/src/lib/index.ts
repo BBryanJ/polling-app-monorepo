@@ -1,4 +1,6 @@
-import * as mockData from '../mock-data.json';
+import { readFileSync } from 'fs';
+
+const mockData = JSON.parse(readFileSync('../db.json]', 'utf-8'));
 
 export function getAllPolls() {
   return mockData.polls;
