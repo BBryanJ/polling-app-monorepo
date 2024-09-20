@@ -13,8 +13,8 @@
     "dev": "tsup src/* --watch",
     "format": "prisma format",
     "lint": "eslint . --max-warnings=0",
-    "prebuild": "pnpm run generate",
-    "predev": "pnpm run generate",
+    "prebuild": "pnpm run db:generate",
+    "predev": "pnpm run db:generate",
     "studio": "prisma studio"
   },
   "devDependencies": {
