@@ -1,0 +1,18 @@
+volumes:
+  database:
+    driver: local
+
+services:
+  postgres-db:
+    platform: linux/amd64
+    image: postgres:12.19
+    container_name: turborepo-postgres
+    restart: always
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: polling-app
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - database:/var/lib/postgresql/data

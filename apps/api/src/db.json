@@ -1,0 +1,58 @@
+{
+  "polls": [
+    {
+      "id": 1,
+      "title": "What is the best food?",
+      "options": [
+        {
+          "optionId": 1,
+          "name": "Pizza",
+          "votes": 10
+        },
+        {
+          "optionId": 2,
+          "name": "Burger",
+          "votes": 5
+        },
+        {
+          "optionId": 3,
+          "name": "Tacos",
+          "votes": 0
+        },
+        {
+          "optionId": 4,
+          "name": "Ice Cream",
+          "votes": 0
+        }
+      ],
+      "createdAt": "2020-03-01T00: 00: 00.000Z",
+      "updatedAt": "2020-03-01T00: 00: 00.000Z",
+      "totalVotes": 15
+    },
+    {
+      "id": 2,
+      "title": "What is the best way to learn React?",
+      "options": [
+        {
+          "optionId": 1,
+          "name": "Online",
+          "votes": 10
+        },
+        {
+          "optionId": 2,
+          "name": "In-person",
+          "votes": 5
+        },
+        {
+          "optionId": 3,
+          "name": "On my own",
+          "votes": 0
+        }
+      ],
+      "createdAt": "2020-03-01T00: 00: 00.000Z",
+      "updatedAt": "2020-03-01T00: 00: 00.000Z",
+      "totalVotes": 15
+    }
+  ],
+  "totalPolls": 2
+}
