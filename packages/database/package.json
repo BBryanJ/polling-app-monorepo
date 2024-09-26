@@ -9,7 +9,7 @@
     "db:migrate:deploy": "prisma migrate deploy",
     "db:generate": "prisma generate",
     "db:push": "prisma db push --skip-generate",
-    "db:seed": "",
+    "db:seed": "tsx src/seed.ts",
     "dev": "tsup src/* --watch",
     "format": "prisma format",
     "lint": "eslint . --max-warnings=0",
@@ -24,6 +24,7 @@
     "eslint": "^8.57.0",
     "prisma": "^5.17.0",
     "tsup": "^8.2.3",
+    "tsx": "^4.7.1",
     "typescript": "^5.5.4"
   },
   "dependencies": {

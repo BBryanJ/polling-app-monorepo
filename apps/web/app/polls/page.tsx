@@ -32,7 +32,6 @@ export default async function PollsPage() {
           </tr>
         </thead>
         <tbody>
-          {/* @ts-ignore */} //TODO: remove this when making the explicit typing
           {polls.map((poll) => (
             <React.Fragment key={poll.id}>
               <tr>
