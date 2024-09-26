@@ -28,7 +28,6 @@ export default async function PollPage({
     <div className='flex h-screen flex-col items-center justify-center'>
       <h2 className='text-2xl font-bold'>{poll.title}</h2>
       <div className='flex flex-col gap-2'>
-        {/* @ts-ignore */} //TODO: remove this when making the explicit typing
         {poll.options.map((option) => (
           <div key={option.optionId}>
             {option.name} ({option.votes}{' '}
