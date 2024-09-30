@@ -1,4 +1,3 @@
-import { Code } from '@repo/ui/code';
 import Link from 'next/link';
 
 export default function Home() {

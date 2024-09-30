@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { prisma } from '@repo/database';
 
 export default async function PollPage({
   params,

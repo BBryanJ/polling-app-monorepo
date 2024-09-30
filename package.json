@@ -3,6 +3,11 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
+    "db:migrate:deploy": "turbo db:migrate:deploy",
+    "db:migrate:dev": "turbo db:migrate:dev",
+    "db:push": "turbo db:push",
+    "db:seed": "turbo db:seed",
+    "db:generate": "turbo db:generate",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
@@ -10,7 +15,7 @@
   "devDependencies": {
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.6.5",
-    "turbo": "^2.0.9",
+    "turbo": "^2.1.2",
     "typescript": "^5.4.5"
   },
   "packageManager": "pnpm@8.15.6",
