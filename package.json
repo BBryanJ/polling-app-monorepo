@@ -11,7 +11,8 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "clean": "turbo run clean && rm -rf node_modules"
+    "clean": "turbo run clean && rm -rf node_modules",
+    "ui": "pnpm --filter=@repo/ui ui"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
