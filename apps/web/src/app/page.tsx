@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Button } from '@repo/ui/components/ui/button';
 
 export default function Home() {
   return (
@@ -12,6 +12,9 @@ export default function Home() {
           incidunt maxime consequuntur doloremque perferendis aliquam ratione,
           ad atque?
         </p>
+        <Button variant='default' size='lg'>
+          I'm a button from <span className='ml-1 font-mono'>@repo/ui</span>
+        </Button>
       </main>
       <footer className='flex items-center justify-between border-t-2 border-gray-200 p-4'>
         <div className='flex items-center space-x-4'>
