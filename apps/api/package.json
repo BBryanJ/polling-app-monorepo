@@ -2,7 +2,7 @@
   "name": "api",
   "scripts": {
     "build": "tsc",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf .turbo && rm -rf node_modules",
     "dev": "tsx watch src/index.ts",
     "lint": "tsc --noEmit && eslint \"src/**/*.ts*\" --max-warnings 0"
   },
